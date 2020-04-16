@@ -1,0 +1,11 @@
+
+<input [(ngModel)]="currentUser.email" />
+<input [(ngModel)]="currentUser.senha" type="password" />
+<button (click)="acaoLogin()">Login</button>
+
+<form>
+    <input [(ngModel)]="name">
+    <div *ngIf="errors.requiredName">
+        Digite um nome valido
+    </div>
+</form>
